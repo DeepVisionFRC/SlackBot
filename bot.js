@@ -1,17 +1,13 @@
 var SlackBot = require('slackbots');
  
-// create a bot
 var bot = new SlackBot({
-    token: 'xoxb-286280430912-uzuC9QsOkJcuaNsJTDTChYlP', // Add a bot https://my.slack.com/services/new/bot and put the token 
+    token: 'xoxb-286280430912-uzuC9QsOkJcuaNsJTDTChYlP',
     name: 'DeepVisionBot'
 });
  
 var params = {
     icon_emoji: ':robot_face:'
 };
-
-bot.on('start', function() {
-});
 
 bot.on('message', async function(data) {
     console.log(data);
