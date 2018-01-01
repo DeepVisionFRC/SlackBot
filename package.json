@@ -11,14 +11,12 @@
     "url": "git+https://github.com/DeepVisionFRC/Slackbot.git"
   },
   "author": "FRC 7308",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DeepVisionFRC/Slackbot/issues"
   },
   "homepage": "https://github.com/DeepVisionFRC/Slackbot#readme",
   "dependencies": {
-    "events": "^1.1.1",
-    "slackbots": "^1.1.0",
-    "xmlhttprequest": "^1.8.0"
+    "slackbots": "^1.1.0"
   }
 }
