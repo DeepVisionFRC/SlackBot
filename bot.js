@@ -1,7 +1,7 @@
 var SlackBot = require('slackbots');
  
 var bot = new SlackBot({
-    token: 'xoxb-286280430912-9ONQhQwbgdZwH6gVjlwfgky1',
+    token: '',
     name: 'DeepVisionBot'
 });
  
