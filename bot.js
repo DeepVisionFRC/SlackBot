@@ -1,10 +1,10 @@
 var SlackBot = require('slackbots');
- 
+
 var bot = new SlackBot({
-    token: '',
+    token: 'xoxb-286280430912-9ONQhQwbgdZwH6gVjlwfgky1',
     name: 'DeepVisionBot'
 });
- 
+
 var params = {
     icon_emoji: ':robot_face:'
 };
@@ -28,11 +28,8 @@ bot.on('message', async function(data) {
 
         if (usedprefix || !requireprefix) {
             var text = "Invalid command. Say `" + prefix + "help` for help."
-
             var command = data.text.substring(prefix.length, data.text.length);
-            if (!usedprefix) {
-                command = data.text.substring(0, data.text.length);
-            }
+            if (!usedprefix) command = data.text.substring(0, data.text.length);
             var user = await bot.getUserById(data.user);
 
             if (command === "help") {
